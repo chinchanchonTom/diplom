@@ -8,12 +8,12 @@
 - [ ] Нет      
 
 3. Выполнен ли вами необходимый минимум заданий на каждом модуле профессии для допуска к дипломной работе?    
-а) -[x] Да   
+а) - [x] Да   
 Поздравляем! Сообщим вам позже, кто будет вашим дипломным руководителем.    
 
 ![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_2.png)     
 ![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_3.png)     
 ![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_4.png)     
 
-б) -[ ]Нет    
+б) - [ ]Нет    
 В этом случае у вас нет допуска к дипломной работе. Если вы хотите сдать домашние работы на закрытых модулях, свяжитесь с координатором вашей профессии.  
