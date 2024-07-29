@@ -1,2 +1,2 @@
 # diplom
-![Foto](https://github.com/chinchanchonTom/devops-netology/blob/main/terraform%20secret%20key.png)
+Дипломная работа Максима Беседкин DEVOPS-35 
