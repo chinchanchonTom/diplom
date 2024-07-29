@@ -1,17 +1,19 @@
 
 1. Получилось ли у вас загрузить в личный кабинет документы, подтверждающие личность, и диплом о высшем или среднем специальном образовании?    
-![Foto](https://github.com/chinchanchonTom/devops-netology/blob/main/terraform%20secret%20key.png)    
+![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_1.png)    
 
 2. Нужна ли вам справка об обучении после сдачи дипломной работы? Справка выдаётся всем студентам, в том числе тем, у кого нет диплома о высшем или среднем специальном образовании.  
-а) Да [x]
+а) [x] Да 
 
 б) Нет    
 
 3. Выполнен ли вами необходимый минимум заданий на каждом модуле профессии для допуска к дипломной работе?  
-а) Да [x]
+а) [x] Да 
 Поздравляем! Сообщим вам позже, кто будет вашим дипломным руководителем.  
 
-
+![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_2.png)   
+![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_3.png)   
+![Foto](https://github.com/chinchanchonTom/diplom/blob/main/Doc/img/Screenshot_4.png)   
 
 б) Нет  
 В этом случае у вас нет допуска к дипломной работе. Если вы хотите сдать домашние работы на закрытых модулях, свяжитесь с координатором вашей профессии.  
