@@ -1,23 +1,13 @@
 pipeline {
   environment {
-    dockerimagename = "chinchanchontom/acc-info:v1"
+    dockerimagename = "awertoss/myapp"
     dockerImage = ""
-    
   }
   agent any
   stages {
     stage('Checkout Source') {
       steps {
-        git branch: 'main', url: 'https://github.com/chinchanchonTom/diplom.git'
-      }
-    }
-    stage('Checkout tag') {
-      steps{
-        script {
-          sh 'git fetch'
-          gitTag=sh(returnStdout:  true, script: "git tag --sort=-creatordate | head -n 1").trim()
-          echo "gitTag output: ${gitTag}"
-        }
+        git branch: 'main', url: 'https://github.com/awertoss/myapp.git'
       }
     }
     stage('Build image') {
@@ -27,35 +17,17 @@ pipeline {
         }
       }
     }
-    stage('Pushing Image:tags') {
+    stage('Pushing Image') {
       environment {
-               registryCredential = 'dockerhub-chinchanchonTom'
+               registryCredential = 'dockerhub-awertoss'
            }
       steps{
         script {
           docker.withRegistry( 'https://index.docker.io/v1/', registryCredential ) {
-            dockerImage.push("${gitTag}")
+            dockerImage.push("latest")
           }
         }
       }
     }
-    stage('sed env') {
-      environment {
-              envTag = ("${gitTag}")
-           }    
-      steps{
-        script {
-          sh "sed -i \'18,22 s/gitTag/\'$envTag\'/g\' myapp-deploy.yml"
-          sh 'cat myapp-deploy.yml'
-        }
-      }
-    }
-    stage('Deploying myapp-deploy to Kubernetes') {
-      steps {
-        script {
-          kubernetesDeploy (configs:'myapp-deploy.yml', kubeconfigId:'k8s-credentials' )
-        }
-      }
-    }
-  }    
-}  
+  }
+}
