@@ -1,5 +1,6 @@
 pipeline {
   environment {
+    registry = "chinchanchontom/acc-info"
     dockerimagename = "chinchanchontom/acc-info:latest"
     dockerImage = ""
 
