@@ -29,7 +29,7 @@ pipeline {
     }
     stage('Pushing Image:tags') {
       environment {
-               registryCredential = 'dockerhub-chinchanchonTom'
+               registryCredential = 'f94ed121-bdac-4ee0-8b34-87210237c8b3'
            }
       steps{
         script {
