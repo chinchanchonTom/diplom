@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    dockerimagename = "chinchanchontom/acc-info:v1"
+    dockerimagename = "chinchanchontom/acc-info:latest"
     dockerImage = ""
 
   }
