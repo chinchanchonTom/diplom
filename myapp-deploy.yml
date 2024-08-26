@@ -4,7 +4,7 @@ metadata:
   labels:
     app: app-web
   name: app-web
-  namespace: prod
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -16,7 +16,7 @@ spec:
         app: app-web
     spec:
       containers:
-        - image: chinchanchontom/acc-info:gitTag
+        - image: chinchanchontom/acc-info:latest
           imagePullPolicy: IfNotPresent
           name: app-web
       terminationGracePeriodSeconds: 30
@@ -26,7 +26,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: app-web
-  namespace: prod
+  namespace: default
 spec:
   ports:
     - name: web
